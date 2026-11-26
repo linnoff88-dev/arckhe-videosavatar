@@ -1,4 +1,4 @@
-ï»¿# ê°Å¸Å½Â¬ VideosAvatar ê¢â¬â avatar falante INEMA com HeyGen
+ï»¿# ê°Å¸Å½Â¬ VideosAvatar ê¢â¬â avatar falante ARCKHÉ com HeyGen
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -8,7 +8,7 @@
 
 Ecossistema para gerar vêÂ­deos de **avatar falante** no HeyGen a partir de um roteiro de texto (9:16, 720p, voz PT-BR) e **entregar o MP4 no bot do openpcbot** (Telegram).
 
-**PêÂ¡gina de guia:** https://inematds.github.io/videosavatar/
+**PêÂ¡gina de guia:** https://linnoff88-dev.github.io/arckhe-/
 
 ## Os dois caminhos (mesma geraêÂ§êÂ£o, billing diferente)
 
@@ -41,7 +41,7 @@ claude mcp add --transport http heygen https://mcp.heygen.com/mcp/v1/
 Tudo vem do `.env` do openpcbot: `HEYGEN_API_KEY`, `HEYGEN_AVATAR_ID_NEI`, `HEYGEN_VOICE_ID_NEI`, `TELEGRAM_BOT_TOKEN`, `ALLOWED_CHAT_ID`. **Nenhuma credencial fica neste repo.**
 
 ---
-INEMA.CLUB êÂ· https://inema.club
+ARCKHÉ AI êÂ· https://ARCKHÉ AI
 
 ---
 

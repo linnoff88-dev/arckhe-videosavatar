@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VideosAvatar — Avatares falantes com HeyGen, do roteiro ao bot</title>
-<meta name="description" content="Ecossistema INEMA para gerar vídeos de avatar falante no HeyGen a partir de um texto — 9:16, 720p, voz PT-BR — e entregar o MP4 no bot do openpcbot. Dois caminhos de crédito: API (pay-as-you-go) e assinatura (MCP).">
+<meta name="description" content="Ecossistema ARCKHÉ para gerar vídeos de avatar falante no HeyGen a partir de um texto — 9:16, 720p, voz PT-BR — e entregar o MP4 no bot do openpcbot. Dois caminhos de crédito: API (pay-as-you-go) e assinatura (MCP).">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -36,8 +36,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -99,9 +99,9 @@
   <a class="brand" href="#top"><span class="emoji">🎬</span> VideosAvatar</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#oque">O que é</a>
@@ -110,7 +110,7 @@
     <a class="sec" href="#creditos">Créditos</a>
     <a class="sec" href="#roadmap">Roadmap</a>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/videosavatar" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/videosavatar" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -118,12 +118,12 @@
   <div class="glow"></div>
   <div class="wrap">
     <div>
-      <span class="chip">INEMA · HeyGen · Avatar Falante</span>
+      <span class="chip">ARCKHÉ · HeyGen · Avatar Falante</span>
       <h1>Seu avatar falando, do roteiro ao <span class="amb">bot</span>.</h1>
       <p class="lead">Gere vídeos do seu avatar no HeyGen a partir de um texto — 9:16, 720p, voz em português — e receba o MP4 direto no bot do openpcbot. Um comando, dois caminhos de crédito.</p>
       <div class="cta">
         <a class="btn" href="#guia">Começar o guia</a>
-        <a class="btn ghost" href="https://github.com/inematds/videosavatar" target="_blank" rel="noopener">Ver no GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/videosavatar" target="_blank" rel="noopener">Ver no GitHub</a>
       </div>
     </div>
     <figure>
@@ -144,7 +144,7 @@
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
   <h2>Avatar falante, sem abrir o HeyGen</h2>
-  <p class="sub">VideosAvatar é o pacote INEMA que transforma um roteiro de texto num vídeo do seu avatar no HeyGen e entrega pronto no Telegram. Toda a chatice (chamar a API, esperar o render, baixar, medir o custo, mandar no bot) já vem resolvida em duas skills do Claude Code.</p>
+  <p class="sub">VideosAvatar é o pacote ARCKHÉ que transforma um roteiro de texto num vídeo do seu avatar no HeyGen e entrega pronto no Telegram. Toda a chatice (chamar a API, esperar o render, baixar, medir o custo, mandar no bot) já vem resolvida em duas skills do Claude Code.</p>
   <div class="grid g3">
     <div class="card"><h3>🎭 Seu avatar, sua voz</h3><p>Usa o <strong>photo avatar</strong> do Nei (engine Avatar IV) com a voz clonada, forçada para <strong>português</strong>. Dá pra trocar por qualquer um dos avatares e das 46 vozes PT da conta.</p></div>
     <div class="card"><h3>⚡ Um comando</h3><p>Você manda a <strong>fala</strong>; ele cria o vídeo, espera o render, baixa o MP4 em <code>~/projetos/output/heygen/</code> e <strong>entrega no bot do openpcbot</strong> com legenda do custo.</p></div>
@@ -268,7 +268,7 @@
   <p class="sub">Um vídeo provocativo de ~14s, 9:16, voz PT-BR, gerado e entregue no bot num único comando.</p>
   <div class="grid g2">
     <div class="card"><h3>🎙️ O roteiro</h3>
-      <p>"O trem da IA já saiu da estaçêo. Quem embarca agora sai na frente. Quem espera, perde — como perdeu a internet e as redes sociais. A diferença nêo é idade, é atitude. Embarque agora: inema.club"</p>
+      <p>"O trem da IA já saiu da estaçêo. Quem embarca agora sai na frente. Quem espera, perde — como perdeu a internet e as redes sociais. A diferença nêo é idade, é atitude. Embarque agora: ARCKHÉ AI"</p>
     </div>
     <div class="card"><h3>📊 O resultado</h3>
       <p><strong>Formato:</strong> 9:16 · 720p · ~14s · voz PT-BR</p>
@@ -282,18 +282,18 @@
 <section id="roadmap"><div class="wrap">
   <span class="chip">Roadmap</span>
   <h2>O que está pronto e o que vem</h2>
-  <p class="sub">O núcleo (gerar + entregar + medir custo) já roda. As próximas fases sêo conforto e integraçêo com o resto do ecossistema INEMA.</p>
+  <p class="sub">O núcleo (gerar + entregar + medir custo) já roda. As próximas fases sêo conforto e integraçêo com o resto do ecossistema ARCKHÉ.</p>
   <div class="phase"><div class="tag">Feito</div><div class="d"><strong>Geraçêo ponta a ponta</strong><span>Skill <code>heygen-cli</code> (API), skill <code>heygen-mcp</code> (assinatura), entrega no bot do openpcbot, custo medido pela quota, esta página de guia.</span></div></div>
   <div class="phase"><div class="tag">Próximo</div><div class="d"><strong>Conforto</strong><span>Voz PT-BR nativa como default opcional, presets de formato (Reels / YouTube), e legendas embutidas no vídeo.</span></div></div>
-  <div class="phase"><div class="tag">Futuro</div><div class="d"><strong>Integraçêo INEMA</strong><span>Intro/outro via pixflow e HyperFrames, fila de vídeos em lote, e seleçêo automática de avatar/voz por campanha.</span></div></div>
+  <div class="phase"><div class="tag">Futuro</div><div class="d"><strong>Integraçêo ARCKHÉ</strong><span>Intro/outro via pixflow e HyperFrames, fila de vídeos em lote, e seleçêo automática de avatar/voz por campanha.</span></div></div>
 </div></section>
 
 <footer>
   <div class="wrap">
     <div class="pill">HeyGen API v3</div><div class="pill">MCP remoto</div><div class="pill">Node 18+</div><div class="pill">Telegram bot</div>
-    <p style="margin-top:18px">VideosAvatar · avatar falante INEMA com HeyGen ·
-      <a href="https://github.com/inematds/videosavatar">inematds/videosavatar</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+    <p style="margin-top:18px">VideosAvatar · avatar falante ARCKHÉ com HeyGen ·
+      <a href="https://github.com/linnoff88-dev/videosavatar">linnoff88-dev/videosavatar</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 
