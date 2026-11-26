@@ -129,7 +129,7 @@
     <figure>
       <div class="term">
         <div class="bar"><i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i></div>
-        <pre class="body"><span class="k">node</span> heygen.mjs --text <span class="s">"O trem da IA já saiu da estação..."</span>
+        <pre class="body"><span class="k">node</span> heygen.mjs --text <span class="s">"O trem da IA já saiu da estaçêo..."</span>
 <span class="c">✓ key OK · créditos de API: 249</span>
 <span class="c">✓ render iniciado · video_id 9d58…190c</span>
 <span class="c">  ...0s status=processing</span>
@@ -148,7 +148,7 @@
   <div class="grid g3">
     <div class="card"><h3>🎭 Seu avatar, sua voz</h3><p>Usa o <strong>photo avatar</strong> do Nei (engine Avatar IV) com a voz clonada, forçada para <strong>português</strong>. Dá pra trocar por qualquer um dos avatares e das 46 vozes PT da conta.</p></div>
     <div class="card"><h3>⚡ Um comando</h3><p>Você manda a <strong>fala</strong>; ele cria o vídeo, espera o render, baixa o MP4 em <code>~/projetos/output/heygen/</code> e <strong>entrega no bot do openpcbot</strong> com legenda do custo.</p></div>
-    <div class="card"><h3>💳 Dois cofres de crédito</h3><p>Escolha entre o <strong>wallet de API</strong> (pay-as-you-go) ou os <strong>créditos da assinatura</strong> (via MCP). Mesma geração, billing diferente — você decide qual queimar primeiro.</p></div>
+    <div class="card"><h3>💳 Dois cofres de crédito</h3><p>Escolha entre o <strong>wallet de API</strong> (pay-as-you-go) ou os <strong>créditos da assinatura</strong> (via MCP). Mesma geraçêo, billing diferente — você decide qual queimar primeiro.</p></div>
   </div>
 </div></section>
 
@@ -169,12 +169,12 @@
       <p><strong>Avatares prontos:</strong> +1.100 públicos, é só escolher o ID.</p>
       <p><strong>Instant / Digital Twin (Avatar V):</strong> clona seu rosto e voz a partir de um selfie de ~15s. Melhor para vídeo.</p>
       <p><strong>Photo Avatar (Avatar IV):</strong> vira apresentador falante a partir de 1 foto. É o avatar do Nei.</p>
-      <p class="mut" style="font-size:.86rem"><em>Criar o avatar é feito no app do HeyGen; depois a automação só usa o <code>avatar_id</code>.</em></p>
+      <p class="mut" style="font-size:.86rem"><em>Criar o avatar é feito no app do HeyGen; depois a automaçêo só usa o <code>avatar_id</code>.</em></p>
     </div>
-    <div class="card"><h3>🔌 Dois caminhos de geração</h3>
+    <div class="card"><h3>🔌 Dois caminhos de geraçêo</h3>
       <p><strong>API key →</strong> skill <code>heygen-cli</code>. Chama <code>POST /v3/videos</code>, gasta o <strong>pool de API</strong> (pay-as-you-go).</p>
       <p><strong>MCP remoto →</strong> skill <code>heygen-mcp</code>. Conector OAuth, gasta os <strong>créditos da assinatura</strong>.</p>
-      <p>Os dois entregam no mesmo bot e usam os mesmos IDs de avatar/voz. Detalhe de billing na seção <a href="#creditos">Créditos</a>.</p>
+      <p>Os dois entregam no mesmo bot e usam os mesmos IDs de avatar/voz. Detalhe de billing na seçêo <a href="#creditos">Créditos</a>.</p>
     </div>
   </div>
 </div></section>
@@ -203,13 +203,13 @@
 
   <div class="step"><div class="b">1</div><div>
     <h3>Gerar pela API (skill heygen-cli)</h3>
-    <p>O caminho padrão. Só a fala é obrigatória; o resto tem default (9:16, 720p, voz PT-BR, entrega no bot).</p>
+    <p>O caminho padrêo. Só a fala é obrigatória; o resto tem default (9:16, 720p, voz PT-BR, entrega no bot).</p>
 <pre><span class="k">node</span> ~/.claude/skills/heygen-cli/scripts/heygen.mjs --text <span class="s">"sua fala aqui"</span></pre>
   </div></div>
 
   <div class="step"><div class="b">2</div><div>
     <h3>Ajustar formato, voz ou avatar</h3>
-    <p>Flags opcionais para mudar enquadramento, resolução, voz ou perfil — ou só salvar local sem mandar no bot.</p>
+    <p>Flags opcionais para mudar enquadramento, resoluçêo, voz ou perfil — ou só salvar local sem mandar no bot.</p>
 <pre><span class="k">node</span> heygen.mjs --text-file roteiro.txt <span class="c">\</span>
   --ratio <span class="s">16:9</span> --res <span class="s">1080p</span> --voice <span class="s">&lt;voice_id&gt;</span> --no-send</pre>
   </div></div>
@@ -239,14 +239,14 @@
 
   <div class="step"><div class="b">6</div><div>
     <h3>Conferir o custo</h3>
-    <p>O CLI mede o custo real lendo a quota antes/depois e imprime quantos créditos saíram. Não estime — leia o número.</p>
+    <p>O CLI mede o custo real lendo a quota antes/depois e imprime quantos créditos saíram. Nêo estime — leia o número.</p>
 <pre><span class="c">✓ custo: 51 créditos de API · restam 198</span></pre>
   </div></div>
 </div></section>
 
 <section id="creditos"><div class="wrap">
   <span class="chip">Créditos &amp; custo</span>
-  <h2>Dois cofres que não se cruzam</h2>
+  <h2>Dois cofres que nêo se cruzam</h2>
   <p class="sub">O HeyGen separa o billing da API do billing do plano web. A API key nunca toca os créditos da assinatura, e vice-versa. Por isso existem duas skills.</p>
   <table class="tbl">
     <thead><tr><th>Caminho</th><th>Cofre que gasta</th><th>Auth</th><th>Skill</th><th>Quando usar</th></tr></thead>
@@ -258,7 +258,7 @@
   <div class="grid g3" style="margin-top:22px">
     <div class="card"><h3>💡 Regra de bolso</h3><p>Queime a <strong>assinatura primeiro</strong> (já está paga) e deixe o wallet de API como reserva.</p></div>
     <div class="card"><h3>📏 Avatar IV é a faixa cara</h3><p>O avatar do Nei é photo avatar (Avatar IV). Por isso o default é <strong>720p e vídeos curtos</strong>, mantendo o gasto baixo.</p></div>
-    <div class="card"><h3>🇧🇷 Português é o ponto de risco</h3><p>A voz clonada está cadastrada como inglês — a automação força <code>locale pt-BR</code>. Confira de ouvido o 1º render.</p></div>
+    <div class="card"><h3>🇧🇷 Português é o ponto de risco</h3><p>A voz clonada está cadastrada como inglês — a automaçêo força <code>locale pt-BR</code>. Confira de ouvido o 1º render.</p></div>
   </div>
 </div></section>
 
@@ -268,7 +268,7 @@
   <p class="sub">Um vídeo provocativo de ~14s, 9:16, voz PT-BR, gerado e entregue no bot num único comando.</p>
   <div class="grid g2">
     <div class="card"><h3>🎙️ O roteiro</h3>
-      <p>"O trem da IA já saiu da estação. Quem embarca agora sai na frente. Quem espera, perde — como perdeu a internet e as redes sociais. A diferença não é idade, é atitude. Embarque agora: inema.club"</p>
+      <p>"O trem da IA já saiu da estaçêo. Quem embarca agora sai na frente. Quem espera, perde — como perdeu a internet e as redes sociais. A diferença nêo é idade, é atitude. Embarque agora: inema.club"</p>
     </div>
     <div class="card"><h3>📊 O resultado</h3>
       <p><strong>Formato:</strong> 9:16 · 720p · ~14s · voz PT-BR</p>
@@ -282,10 +282,10 @@
 <section id="roadmap"><div class="wrap">
   <span class="chip">Roadmap</span>
   <h2>O que está pronto e o que vem</h2>
-  <p class="sub">O núcleo (gerar + entregar + medir custo) já roda. As próximas fases são conforto e integração com o resto do ecossistema INEMA.</p>
-  <div class="phase"><div class="tag">Feito</div><div class="d"><strong>Geração ponta a ponta</strong><span>Skill <code>heygen-cli</code> (API), skill <code>heygen-mcp</code> (assinatura), entrega no bot do openpcbot, custo medido pela quota, esta página de guia.</span></div></div>
+  <p class="sub">O núcleo (gerar + entregar + medir custo) já roda. As próximas fases sêo conforto e integraçêo com o resto do ecossistema INEMA.</p>
+  <div class="phase"><div class="tag">Feito</div><div class="d"><strong>Geraçêo ponta a ponta</strong><span>Skill <code>heygen-cli</code> (API), skill <code>heygen-mcp</code> (assinatura), entrega no bot do openpcbot, custo medido pela quota, esta página de guia.</span></div></div>
   <div class="phase"><div class="tag">Próximo</div><div class="d"><strong>Conforto</strong><span>Voz PT-BR nativa como default opcional, presets de formato (Reels / YouTube), e legendas embutidas no vídeo.</span></div></div>
-  <div class="phase"><div class="tag">Futuro</div><div class="d"><strong>Integração INEMA</strong><span>Intro/outro via pixflow e HyperFrames, fila de vídeos em lote, e seleção automática de avatar/voz por campanha.</span></div></div>
+  <div class="phase"><div class="tag">Futuro</div><div class="d"><strong>Integraçêo INEMA</strong><span>Intro/outro via pixflow e HyperFrames, fila de vídeos em lote, e seleçêo automática de avatar/voz por campanha.</span></div></div>
 </div></section>
 
 <footer>
